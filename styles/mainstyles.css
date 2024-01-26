@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    color: white;
+    font-family: 'Play', sans-serif;
+    background-color: black;
+}
+/*tag styles*/
+header{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+/*images styles*/
+.logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+}
+/*header class styles*/
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: 40%;
+    border-radius: 0px 0px 20px 20px;
+    background: rgb(18, 18, 18);
+    box-shadow: -100px -15px 0px 0px rgb(18, 18, 18),
+                100px -15px 0px 0px rgb(18, 18, 18);
+}
