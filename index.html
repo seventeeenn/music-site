@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mainstyles.css">
     <link rel="stylesheet" href="styles/media.css">
@@ -14,9 +15,9 @@
 <body>
     <header>
         <div class="head">
-            <p>nigga likes pizza</p>
+            <p></p>
             <img class="logo" src="images/pre-logo.png" alt="">
-            <p>nigga likes pizza</p>
+            <p></p>
         </div>
         <div class="menu">
 
@@ -26,9 +27,23 @@
         <div class="block-period-music">
             <p class="top-music">Лучший трек за месяц:</p>
             <img class="gram-plast" src="images/gram-plast.png" alt="">
-            <p class="track-name">Name of the track</p>
-            <p class="track-author">Author</p>
-            <audio class="month-audio" controls src="music/Deftones-MyOwnSummerShoveIt.mp3"></audio>
+            <div class="lower-block">
+                <div class="song-details">
+                    <p class="track-name">Name of the track</p>
+                    <p class="track-artist">Author</p>
+                </div>
+                <div class="controls">
+                    <i class="material-icons">play_arrow</i>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar"></div>
+                    <div class="timer">
+                        <span class="current">0:00</span>
+                        <span class="duration">3:34</span>
+                    </div>
+                    <audio id="main-audio" src="music/Deftones-MyOwnSummerShoveIt.mp3"></audio>
+                </div>
+            </div>
         </div>
     </main>
     <script src="scripts/script.js"></script>

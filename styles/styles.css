@@ -4,16 +4,92 @@ main{
     align-items: center;
 }
 /*main class styles*/
+.lower-block{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+}
+.song-details{
+    text-align: center;
+    color: #fafafa;
+    margin-bottom: 40px;
+}
 .block-period-music{
     position: relative;
     top: 160px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 280px;
     height: 500px;
     border-radius: 20px;
-    background: linear-gradient(to top, #c471ed, 20%,rgb(18, 18, 18));
+    background: linear-gradient(to top, #c471ed 0%, 25%,rgb(18, 18, 18) 100%);
+    padding-bottom: 55px;
+}
+.progress-area{
+    height: 6px;
+    width: 100%;
+    border-radius: 20px;
+    background: rgb(184, 172, 172);
+    cursor: pointer;
+}
+.progress-area .progress-bar{
+    height: 6px;
+    width: 50%;
+    border-radius: 20px;
+    position: relative;
+    background: #fafafa;
+    /*background: linear-gradient(90deg, color 0%, color 100%);*/
+}
+.progress-bar::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    background: white;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.progress-area .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2px;
+}
+.timer span{
+    font-size: 14px;
+    color: #fafafa;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0px;
+}
+.controls i{
+    height: 40px;
+    width: 40px;
+    padding-top: 8px;
+    background: #fafafa;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+/*hovers*/
+.material-icons:hover{
+    scale: 1.15;
+}
+.progress-area:hover .progress-bar{
+    background-color: #fafafa;
+}
+.progress-area:hover .progress-bar::before{
+    opacity: 1;
 }
 /*p styles*/
 .top-music{
@@ -23,25 +99,22 @@ main{
     top: -45px;
     margin: 0;
 }
-.track-name{
+.song-details .track-name{
     margin: 0;
     font-weight: 700;
     font-size: 29px;
 }
-.track-author{
+.song-details .track-artist{
+    opacity: 0.77;
     margin: 0;
     font-size: 18px;
     font-weight: 700;
-    color: rgb(18, 18, 18);
 }
 /*audio styles*/
-.month-audio{
-    
-}
+
 /*images styles*/
 .gram-plast{
-    margin: 15px;
-    margin-bottom: 70px;
+    margin: 25px 15px 15px 15px;
     width: 230px;
     height: 230px;
     animation: 5s infinite linear rotation;
