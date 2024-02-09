@@ -1,8 +1,67 @@
-const wrapper = document.querySelector(".block-period-music"),
+const wrapper = document.querySelector(".block-period-music.mid"),
 playPausebtn = wrapper.querySelector(".controls"),
 mainAudio = wrapper.querySelector("#main-audio"),
 progressBar = wrapper.querySelector(".progress-bar"),
-progressArea = wrapper.querySelector(".progress-area");
+progressArea = wrapper.querySelector(".progress-area"),
+
+leftBtn = document.querySelector(".button.left"),
+rightBtn = document.querySelector(".button.right"),
+leftBlock = document.querySelector(".block-period-music.a"),
+midBlock = document.querySelector(".block-period-music.b"),
+rightBlock = document.querySelector(".block-period-music.c");
+
+if (leftBtn) {
+    leftBtn.addEventListener("click", (e) => {
+        if (leftBlock.classList.contains("right")){
+            leftBlock.classList.remove("right");
+            leftBlock.classList.add("mid");
+            rightBlock.classList.remove("mid");
+            rightBlock.classList.add("left");
+            midBlock.classList.remove("left");
+            midBlock.classList.add("right");
+        } else if (leftBlock.classList.contains("left")) {
+            leftBlock.classList.remove("left");
+            leftBlock.classList.add("right");
+            rightBlock.classList.remove("right");
+            rightBlock.classList.add("mid");
+            midBlock.classList.remove("mid");
+            midBlock.classList.add("left");
+        } else {
+            leftBlock.classList.remove("mid");
+            leftBlock.classList.add("left");
+            rightBlock.classList.remove("left");
+            rightBlock.classList.add("right");
+            midBlock.classList.remove("right");
+            midBlock.classList.add("mid");
+        }
+    });
+}
+if (rightBtn) {
+    rightBtn.addEventListener("click", (e) => {
+        if (leftBlock.classList.contains("right")){
+            leftBlock.classList.remove("right");
+            leftBlock.classList.add("left");
+            rightBlock.classList.remove("mid");
+            rightBlock.classList.add("right");
+            midBlock.classList.remove("left");
+            midBlock.classList.add("mid");
+        } else if (leftBlock.classList.contains("left")) {
+            leftBlock.classList.remove("left");
+            leftBlock.classList.add("mid");
+            rightBlock.classList.remove("right");
+            rightBlock.classList.add("left");
+            midBlock.classList.remove("mid");
+            midBlock.classList.add("right");
+        } else {
+            leftBlock.classList.remove("mid");
+            leftBlock.classList.add("right");
+            rightBlock.classList.remove("left");
+            rightBlock.classList.add("mid");
+            midBlock.classList.remove("right");
+            midBlock.classList.add("left");
+        }
+    });
+}
 
 mainAudio.volume = 0.1;
 
@@ -60,3 +119,4 @@ progressArea.addEventListener("click", (e)=>{
     mainAudio.currentTime = (clickedOffSetX / progressWidthval) * songDuration;
     playMusic();
 });
+

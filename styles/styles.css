@@ -1,6 +1,8 @@
 /*tag styles*/
 main{
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
     width: 100%;
     height: 100%;
     position: relative;
@@ -11,23 +13,9 @@ main{
     display: flex;
     gap: 40px;
 }
-.def-scale:hover{
-    scale: 1.1;
-}
-.low-scale{
-    opacity: 70%;
-    scale: 0.75;
-    cursor: pointer;
-}
-.low-scale:hover{
-    opacity: 100%;
-    scale: 0.85;
-}
-.low-scale .lower-block, .low-scale .lower-block{
-    pointer-events: none;
-}
 .lower-block{
     height: 140px;
+    width: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -37,6 +25,7 @@ main{
     margin-bottom: 40px;
 }
 .block-period-music{
+    z-index: 1;
     position: relative;
     top: 160px;
     display: flex;
@@ -48,7 +37,8 @@ main{
     border-radius: 20px;
     background: linear-gradient(to top, #c471ed 0%, 25%,rgb(18, 18, 18) 100%);
     padding-bottom: 55px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out,
+                transform 0.5s ease-in-out;
 }
 .progress-area{
     height: 6px;
@@ -142,10 +132,9 @@ main{
     height: 230px;
     animation: 5s infinite linear rotation;
 }
-
-
 /*/////*/
 .button{
+    z-index: 2;
   display: block;
   position: relative;
   top: 370px;
@@ -157,9 +146,6 @@ main{
   background-color: transparent;
   cursor: pointer;
   border: 0;
-}
-.button.right{
-    transform: rotate(180deg);
 }
 .button:before,
 .button:after {
@@ -174,7 +160,7 @@ main{
     transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
 }
 .button:after {
-  border: 4px solid #96daf0;
+  border: 4px solid #c471ed;
   transform: scale(1.3);
   transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
     transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -212,4 +198,44 @@ main{
 .button:focus .button-box {
   transition: 0.4s;
   transform: translateX(-56px);
+}
+/**/
+.block-period-music.left{
+    position: absolute;
+    opacity: 70%;
+    scale: 0.75;
+    cursor: pointer;
+    transform: translateX(-550px);
+}
+.block-period-music.left:hover{
+    opacity: 100%;
+    scale: 0.85;
+}
+.button.left{
+    position: absolute;
+    transform: translateX(-220px);
+}
+.block-period-music.mid{
+    
+}
+.block-period-music.mid:hover{
+    scale: 1.1;
+}
+.button.right{
+    position: absolute;
+    transform: translateX(220px) rotate(180deg);
+}
+.block-period-music.right{
+    position: absolute;
+    opacity: 70%;
+    scale: 0.75;
+    cursor: pointer;
+    transform: translateX(550px);
+}
+.block-period-music.right:hover{
+    opacity: 100%;
+    scale: 0.85;
+}
+.block-period-music.left .lower-block, .block-period-music.right .lower-block{
+    pointer-events: none;
 }
