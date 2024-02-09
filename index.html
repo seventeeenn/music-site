@@ -24,91 +24,13 @@
         </div>
     </header>
     <main>
-      <div class="block-period-music left a">
-        <p class="top-music">Лучший трек за месяц:</p>
-        <img class="gram-plast" src="images/gram-plast.png" alt="">
-        <div class="lower-block">
-            <div class="song-details">
-                <p class="track-name">Name</p>
-                <p class="track-artist">Author</p>
-            </div>
-            <div class="controls">
-                <i class="material-icons">play_arrow</i>
-            </div>
-            <div class="progress-area">
-                <div class="progress-bar"></div>
-                <div class="timer">
-                    <span class="current">0:00</span>
-                    <span class="duration">3:34</span>
-                </div>
-                <audio id="main-audio" src="music/Deftones-MyOwnSummerShoveIt.mp3"></audio>
-            </div>
-        </div>
-    </div>
-            <button class="button left">
-                <div class="button-box">
-                  <span class="button-elem">
-                    <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span class="button-elem">
-                    <svg viewBox="0 0 46 40">
-                      <path
-                        d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                      ></path>
-                    </svg>
-                  </span>
-                </div>
-            </button>
-            <div class="block-period-music mid b">
-                <p class="top-music">Лучший трек за месяц:</p>
-                <img class="gram-plast" src="images/gram-plast.png" alt="">
-                <div class="lower-block">
-                    <div class="song-details">
-                        <p class="track-name">Name of the track</p>
-                        <p class="track-artist">Author</p>
-                    </div>
-                    <div class="controls">
-                        <i class="material-icons">play_arrow</i>
-                    </div>
-                    <div class="progress-area">
-                        <div class="progress-bar"></div>
-                        <div class="timer">
-                            <span class="current">0:00</span>
-                            <span class="duration">3:34</span>
-                        </div>
-                        <audio id="main-audio" src="music/Deftones-MyOwnSummerShoveIt.mp3"></audio>
-                    </div>
-                </div>
-            </div>
-            <button class="button right">
-                <div class="button-box">
-                  <span class="button-elem">
-                    <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span class="button-elem">
-                    <svg viewBox="0 0 46 40">
-                      <path
-                        d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
-                      ></path>
-                    </svg>
-                  </span>
-                </div>
-            </button>
-        </div>
-        <div class="block-period-music right c">
+      <div class="wrapper-for-blocks">
+        <div class="block-period-music left a">
           <p class="top-music">Лучший трек за месяц:</p>
           <img class="gram-plast" src="images/gram-plast.png" alt="">
           <div class="lower-block">
               <div class="song-details">
-                  <p class="track-name">track</p>
+                  <p class="track-name">Name</p>
                   <p class="track-artist">Author</p>
               </div>
               <div class="controls">
@@ -123,7 +45,96 @@
                   <audio id="main-audio" src="music/Deftones-MyOwnSummerShoveIt.mp3"></audio>
               </div>
           </div>
+       </div>
+              <button class="button left">
+                  <div class="button-box">
+                    <span class="button-elem">
+                      <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="button-elem">
+                      <svg viewBox="0 0 46 40">
+                        <path
+                          d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+              </button>
+              <div class="block-period-music mid b">
+                  <p class="top-music">Лучший трек за месяц:</p>
+                  <img class="gram-plast" src="images/gram-plast.png" alt="">
+                  <div class="lower-block">
+                      <div class="song-details">
+                          <p class="track-name">Name of the track</p>
+                          <p class="track-artist">Author</p>
+                      </div>
+                      <div class="controls">
+                          <i class="material-icons">play_arrow</i>
+                      </div>
+                      <div class="progress-area">
+                          <div class="progress-bar"></div>
+                          <div class="timer">
+                              <span class="current">0:00</span>
+                              <span class="duration">3:34</span>
+                          </div>
+                          <audio id="main-audio" src="music/Deftones-MyOwnSummerShoveIt.mp3"></audio>
+                      </div>
+                  </div>
+              </div>
+              <button class="button right">
+                  <div class="button-box">
+                    <span class="button-elem">
+                      <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="button-elem">
+                      <svg viewBox="0 0 46 40">
+                        <path
+                          d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+              </button>
+          <div class="block-period-music right c">
+            <p class="top-music">Лучший трек за месяц:</p>
+            <img class="gram-plast" src="images/gram-plast.png" alt="">
+            <div class="lower-block">
+                <div class="song-details">
+                    <p class="track-name">track</p>
+                    <p class="track-artist">Author</p>
+                </div>
+                <div class="controls">
+                    <i class="material-icons">play_arrow</i>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar"></div>
+                    <div class="timer">
+                        <span class="current">0:00</span>
+                        <span class="duration">3:34</span>
+                    </div>
+                    <audio id="main-audio" src="music/Deftones-MyOwnSummerShoveIt.mp3"></audio>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <span class="line"></span>
     </main>
+    <div class="wrapper-for-music">
+      <div class="card">
+        <p class="heading">Popular this month</p>
+        <p>Powered By</p>
+        <p>Uiverse</p>
+      </div>      
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>
