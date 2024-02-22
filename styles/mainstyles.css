@@ -13,10 +13,21 @@ body{
 }
 /*tag styles*/
 header{
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 110px;
+    background: #1d1c21;
+    z-index: 2;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+}
+#homepage{
+    width: 55px;
+}
+header:hover{
+    width: 200px;
 }
 main{
     display: flex;
@@ -25,19 +36,37 @@ main{
 .logo{
     height: 80px;
     width: 80px;
-    border-radius: 50%;
-    position: relative;
-    top: 20px;
 }
 /*header class styles*/
 .head{
     display: flex;
-    justify-content: space-between;
-    align-items: end;
-    height: 70px;
-    width: 40%;
-    border-radius: 0px 0px 20px 20px;
-    background: rgb(18, 18, 18);
-    box-shadow: -100px -15px 0px 0px rgb(18, 18, 18),
-                100px -15px 0px 0px rgb(18, 18, 18);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.menu{
+
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
 }
