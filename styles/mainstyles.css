@@ -20,14 +20,10 @@ header{
     background: #1d1c21;
     z-index: 2;
     border-radius: 8px;
-    cursor: pointer;
     transition: all 0.25s ease-out;
 }
-#homepage{
-    width: 55px;
-}
 header:hover{
-    width: 200px;
+    width: 175px;
 }
 main{
     display: flex;
@@ -36,6 +32,7 @@ main{
 .logo{
     height: 80px;
     width: 80px;
+    cursor: pointer;
 }
 /*header class styles*/
 .head{
@@ -57,12 +54,30 @@ main{
     list-style-type: none;
     width: 100%;
     transition: all 0.4s ease-in-out;
+    cursor: pointer;
 }
-.menu{
-
+#homeicon{
+    display: flex;
+    gap: 15px;
+    position: relative;
+    animation: homeicon2 0.2s ease-out;
+}
+header:hover #homeicon{
+    animation: homeicon1 0.2s ease-out;
+}
+.newSpan{
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    
+}
+.menu li a div .material-icons{
+    scale: 1.5;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 .menu li a{
-    display: block;
     padding: 10px;
     text-decoration: none;
     font-size: 30px;

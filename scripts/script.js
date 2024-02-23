@@ -8,7 +8,23 @@ leftBtn = document.querySelector(".button.left"),
 rightBtn = document.querySelector(".button.right"),
 leftBlock = document.querySelector(".block-period-music.a"),
 midBlock = document.querySelector(".block-period-music.b"),
-rightBlock = document.querySelector(".block-period-music.c");
+rightBlock = document.querySelector(".block-period-music.c"),
+
+header = document.querySelector("header"),
+div = document.querySelector(".menu ul li a div"),
+newSpan = document.createElement("span");
+
+newSpan.classList.add("newSpan");
+
+newSpan.innerHTML += `
+    Главная
+    `;
+header.addEventListener('mouseenter', e => {
+    div.appendChild(newSpan);
+})
+header.addEventListener('mouseleave', e => {
+    newSpan.remove();
+})
 
 function clickBtn(){
     if (leftBtn) {

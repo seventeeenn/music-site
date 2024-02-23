@@ -95,7 +95,7 @@ main{
     transition: scale 0.2s ease;
 }
 /*hovers*/
-.material-icons:not(.arrow-down):hover{
+.material-icons:not(.arrow-down, .homeicon):hover{
     scale: 1.15;
 }
 .progress-area:hover .progress-bar{
