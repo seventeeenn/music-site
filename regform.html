@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles/mainstyles.css">
     <link rel="stylesheet" href="registration/styles/styles.css">
     <title>Document</title>
@@ -13,17 +15,31 @@
 <body>
     <header>
         <div class="head">
-
+            <img class="logo" src="images/pre-logo.png" alt="">
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#" id="item1"><img src="images/homepage.png" alt=""><span class="items">Главная</span></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"><span class="items">Регистрация</span></a></li>
+          </ul>
         </div>
     </header>
     <main>
-        <form class="reg-form" action="" method="post">
-            <h2 class="main-reg-font">Регистрация</h2>
-            <div class="form-group">
-                <label for=""></label>
-                <input class="form-control" type="text">
-            </div>
-        </form>
+        <div class="reg-form">
+            <form action="" method="post">
+                <h2 class="main-reg-font">Регистрация</h2>
+                <div class="form-group">
+                    <input class="form-control" type="text" required>
+                    <label>Логин</label>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" required>
+                    <label>Пароль</label>
+                </div>
+                <button id="sendbut">SEND</button>
+            </form>
+        </div>
     </main>
     <script src="scripts/mainscript.js"></script>
 </body>

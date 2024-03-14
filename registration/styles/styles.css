@@ -6,14 +6,54 @@ main{
 .main-reg-font{
     color: white;
     margin: 0;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .reg-form{
-    padding-top: 10px;
-    margin: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 400px;
-    background: rgb(18, 18, 18);
-    border-radius: 15px 15px 15px 15px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: #1d1c21;
+    border-radius: 10px;
+    background: #1d1c21;
+}
+.form-group{
+    position: relative;
+}
+.form-group label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.form-group input:focus ~ label,
+.form-group input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+}
+.form-group input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+#sendbut{
+    width: 100px;
 }

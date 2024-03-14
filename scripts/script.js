@@ -11,20 +11,18 @@ midBlock = document.querySelector(".block-period-music.b"),
 rightBlock = document.querySelector(".block-period-music.c"),
 
 header = document.querySelector("header"),
-div = document.querySelector(".menu ul li a div"),
-newSpan = document.createElement("span");
+menuItems = document.querySelectorAll(".items");
 
-newSpan.classList.add("newSpan");
-
-newSpan.innerHTML += `
-    Главная
-    `;
-header.addEventListener('mouseenter', e => {
-    div.appendChild(newSpan);
-})
-header.addEventListener('mouseleave', e => {
-    newSpan.remove();
-})
+header.addEventListener('mouseenter', function() {
+    menuItems.forEach(item => {
+        item.style.display = 'block';
+    })
+});
+header.addEventListener('mouseleave', function() {
+    menuItems.forEach(item => {
+        item.style.display = 'none';
+    })
+});
 
 function clickBtn(){
     if (leftBtn) {

@@ -12,6 +12,25 @@ body{
     overflow-x: hidden;
 }
 /*tag styles*/
+.items{
+    font-size: 20px;
+    display: none;
+}
+#item1 img{
+    width: 50px;
+}
+.menu ul li a{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    justify-content: flex-start;
+}
+header:hover .items{
+    display: block;
+}
 header{
     position: fixed;
     top: 30px;
@@ -55,33 +74,4 @@ main{
     width: 100%;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
-}
-#homeicon{
-    display: flex;
-    gap: 15px;
-    position: relative;
-    animation: homeicon2 0.2s ease-out;
-}
-header:hover #homeicon{
-    animation: homeicon1 0.2s ease-out;
-}
-.newSpan{
-    position: relative;
-    font-size: 18px;
-    text-align: center;
-    
-}
-.menu li a div .material-icons{
-    scale: 1.5;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-.menu li a{
-    padding: 10px;
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
 }
