@@ -55,5 +55,22 @@ main{
     background: transparent;
 }
 #sendbut{
-    width: 100px;
+    font-weight: 600;
+    color: white;
+    padding: 15px 10px;
+    background: linear-gradient(to right, #ad5389, #843bac);
+    border-radius: 10px;
+    width: 140px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+#sendbut:hover{
+    transform: scale(1.1);
+}
+#check{
+    font-size: 13px;
+    color: rgb(236, 102, 102);
+    margin-top: 10px;
+    margin-left: 5px;
 }
