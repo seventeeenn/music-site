@@ -41,9 +41,14 @@
                     <input class="form-control same2" type="password" required>
                     <label>Подтвердите пароль</label>
                 </div>
-                <input id="sendbut" value="Регистрация" type="button" onclick="sendForm()">
+                <div class="form-group">
+                    <input class="form-control same2" type="text" id="avatar" required>
+                    <label>Ссылка на аватар</label>
+                </div>
+                <input id="sendbut" value="Регистрация" type="button" onclick="saveUserData()">
                 <div id="checkpass"></div>
                 <div id="checklog"></div>
+                <div id="checkall"></div>
             </form>
         </div>
     </main>

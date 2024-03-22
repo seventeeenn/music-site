@@ -15,12 +15,16 @@ body{
 /*tag styles*/
 .items{
     font-size: 20px;
-    display: none;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.25s ease-out;
 }
 #item1 img{
     width: 50px;
 }
 .menu ul li a{
+    /*display flex wrong need to be fixed hover effect*/
     display: flex;
     align-items: center;
     gap: 6px;
@@ -28,9 +32,12 @@ body{
     text-decoration: none;
     color: white;
     justify-content: flex-start;
+    transition: all 0.25s ease-out;
 }
 header:hover .items{
-    display: block;
+    width: 100%;
+    opacity: 100%;
+    overflow-x: hidden;
 }
 header{
     position: fixed;

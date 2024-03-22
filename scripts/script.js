@@ -13,17 +13,6 @@ rightBlock = document.querySelector(".block-period-music.c"),
 header = document.querySelector("header"),
 menuItems = document.querySelectorAll(".items");
 
-header.addEventListener('mouseenter', function() {
-    menuItems.forEach(item => {
-        item.style.display = 'block';
-    })
-});
-header.addEventListener('mouseleave', function() {
-    menuItems.forEach(item => {
-        item.style.display = 'none';
-    })
-});
-
 function clickBtn(){
     if (leftBtn) {
         leftBtn.addEventListener("click", (e) => {

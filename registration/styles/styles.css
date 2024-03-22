@@ -68,14 +68,14 @@ main{
 #sendbut:hover{
     transform: scale(1.1);
 }
-#checkpass{
+#checkpass, #checklog{
     font-size: 13px;
     color: rgb(236, 102, 102);
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
 }
-#checklog{
+#checkall{
     font-size: 13px;
     color: rgb(236, 102, 102);
     margin-left: 5px;
