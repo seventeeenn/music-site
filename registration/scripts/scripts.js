@@ -4,16 +4,18 @@ checkLogin = document.querySelector("#checklog"),
 checkAll = document.querySelector("#checkall"),
 password1 = document.querySelector(".same1"),
 password2 = document.querySelector(".same2"),
-login = document.querySelector(".login");
+login = document.querySelector(".login"),
+email = document.querySelector("#email");
 
 
 function saveUserData(){
     const currentLogin = login.value;
     const currentPassword = password1.value;
     const currentConfPassword = password2.value;
+    const currentEmail = email.value;
     const currentAvatarUrl = document.querySelector('#avatar').value;
 
-    if (!currentLogin || !currentPassword || !currentConfPassword || !currentAvatarUrl) {
+    if (!currentLogin || !currentPassword || !currentConfPassword || !currentEmail || !currentAvatarUrl) {
         checkAll.innerHTML = "Пожалуйста, заполните все поля.";
         return;
     }
@@ -21,26 +23,40 @@ function saveUserData(){
         checkAll.innerHTML = "";
     }
 
-    // Сохраняем данные о никнейме и URL аватара в локальном хранилище
-    localStorage.setItem('userNickname', nickname);
-    localStorage.setItem('userAvatarUrl', avatarUrl);
+    localStorage.setItem('userLogin', currentLogin);
+    localStorage.setItem('userAvatarUrl', currentAvatarUrl);
 
-    // Сохраняем остальные данные в одной переменной
-    const otherUserDataString = `${firstName}|${lastName}|${email}`;
+    const otherUserDataString = `${currentPassword}|${currentEmail}`;
 
     console.log('Данные успешно сохранены в локальном хранилище.');
 
-    document.getElementById('firstName').value = '';
-    document.getElementById('lastName').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('nickname').value = '';
-    document.getElementById('avatar').value = '';
+    login.value = '';
+    password1.value = '';
+    password2.value = '';
+    email.value = '';
+    document.querySelector('#avatar').value = '';
 
-    console.log(`Регистрация успешно завершена, добро пожаловать, ${nickname}`);
+    console.log(`Регистрация успешно завершена, добро пожаловать, ${currentLogin}`);
 
-    window.location.href = '../html/checkprofil.html';
+    window.location.href = '../music-site/urprofile.html';
 
 }
+
+function getDataFromLocalStorage() {
+    const currentLogin = localStorage.getItem('userLogin');
+    const currentAvatarUrl = localStorage.getItem('userAvatarUrl');
+    const otherDataString = localStorage.getItem('userOtherData');
+
+
+    login.innerHTML = currentLogin;
+
+    const avatarImage = document.createElement('img');
+    avatarImage.src = currentAvatarUrl || '';
+    avatarImage.alt = 'User Avatar';
+    document.getElementById('avatar').appendChild(avatarImage);
+}
+
+getDataFromLocalStorage();
 
 /*function sendForm(){
     let error = {};
