@@ -52,6 +52,26 @@ header{
 header:hover{
     width: 175px;
 }
+.righthead:hover{
+    scale: 1.15;
+}
+.profpic{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.righthead{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #1d1c21;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    transition: all 0.25s ease-out;
+    cursor: pointer;
+}
 main{
     display: flex;
 }
@@ -60,6 +80,7 @@ main{
     height: 80px;
     width: 80px;
     cursor: pointer;
+    border-radius: 8px;
 }
 /*header class styles*/
 .head{
