@@ -254,11 +254,19 @@ main{
   scale: 2.4;
   animation: animArrow 1s ease-in-out infinite;
 }
-
-
-
-
-
-.wrapper-for-music{
-    
+.cards{
+    padding: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    gap: 40px;
+}
+.card-block{
+    width: 200px;
+    height: 250px;
+    background: linear-gradient(0deg, black 0%, black 35%, white 100%);
+    border-radius: 20px;
+    transition: 0.15s all linear;
+}
+.card-block:hover{
+    scale: 1.1;
 }
