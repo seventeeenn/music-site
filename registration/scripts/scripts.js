@@ -42,32 +42,17 @@ function saveUserData(){
 
 }
 
-function getDataFromLocalStorage() {
-    const currentLogin = localStorage.getItem('userLogin');
-    const currentAvatarUrl = localStorage.getItem('userAvatarUrl');
-    const otherDataString = localStorage.getItem('userOtherData');
-
-
-    document.getElementById('nickname').innerHTML = currentLogin;
-
-    const avatarImage = document.createElement('img');
-    avatarImage.src = currentAvatarUrl || '';
-    avatarImage.alt = 'User Avatar';
-    document.getElementById('avatar').appendChild(avatarImage).classList.add('profpic');
-}
-getDataFromLocalStorage();
-
 function ProfilCheckFromOtherHTML(){
     const currentAvatarUrl = localStorage.getItem('userAvatarUrl');
     if (localStorage.getItem('userLogin')) {
-      document.getElementById('item1').src = currentAvatarUrl || '';
+      /*document.getElementById('item1').src = currentAvatarUrl || '';*/
       window.location.href = 'http://127.0.0.1:3000/d:/Torgashin/music-site/urprofile.html';
       console.log('da');
     } else {
-      window.location.href = 'http://127.0.0.1:3000/d:/Torgashin/music-site/regform.html#';
+      window.location.href = 'http://127.0.0.1:3000/d:/Torgashin/music-site/regform.html';
       console.log('net');
   }
-  }
+}
 /*function sendForm(){
     let error = {};
     let errors = 0;
