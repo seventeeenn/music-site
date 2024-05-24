@@ -38,7 +38,7 @@ function saveUserData(){
 
     console.log(`Регистрация успешно завершена, добро пожаловать, ${currentLogin}`);
 
-    window.location.href = '../music-site/urprofile.html';
+    window.location.href = '../urprofile.html';
 
 }
 
@@ -46,10 +46,10 @@ function ProfilCheckFromOtherHTML(){
     const currentAvatarUrl = localStorage.getItem('userAvatarUrl');
     if (localStorage.getItem('userLogin')) {
       /*document.getElementById('item1').src = currentAvatarUrl || '';*/
-      window.location.href = 'http://127.0.0.1:3000/d:/Torgashin/music-site/urprofile.html';
+      window.location.href = '../urprofile.html';
       console.log('da');
     } else {
-      window.location.href = 'http://127.0.0.1:3000/d:/Torgashin/music-site/regform.html';
+      window.location.href = '../regform.html';
       console.log('net');
   }
 }
