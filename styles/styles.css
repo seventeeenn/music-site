@@ -276,11 +276,26 @@ main{
     height: 150px;
 }
 .genre{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     margin-top: 44px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 27px;
     display: flex;
     justify-content: center;
-    color: black;
+    color: rgb(0, 0, 0);
+}
+
+
+.brightness{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*.menu li:nth-child(1):hover{
+    background-color: rgb(25, 23, 23);
+}*/
+.boom .menu li:nth-child(1){
+    background-color: rgb(18, 17, 17);
 }

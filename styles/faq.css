@@ -1,0 +1,11 @@
+.boom .menu li:nth-child(2){
+    background-color: #1d1c21;
+}
+.boom .menu li:nth-child(3){
+    background-color: #1d1c21;
+}
+.boom .menu li:nth-child(4){
+    background-color: rgb(18, 17, 17);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

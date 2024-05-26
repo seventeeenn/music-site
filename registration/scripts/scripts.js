@@ -5,7 +5,8 @@ checkAll = document.querySelector("#checkall"),
 password1 = document.querySelector(".same1"),
 password2 = document.querySelector(".same2"),
 login = document.querySelector(".login"),
-email = document.querySelector("#email");
+email = document.querySelector("#email"),
+profpic = document.querySelector(".profpic");
 
 
 function saveUserData(){
@@ -18,9 +19,15 @@ function saveUserData(){
     if (!currentLogin || !currentPassword || !currentConfPassword || !currentEmail || !currentAvatarUrl) {
         checkAll.innerHTML = "Пожалуйста, заполните все поля.";
         return;
-    }
-    else{
+    } else{
         checkAll.innerHTML = "";
+    }
+
+    if (currentPassword != currentConfPassword){
+        checkPassword.innerHTML = "Пароли не совпадают.";
+        return;
+    } else {
+        checkPassword.innerHTML = "";
     }
 
     localStorage.setItem('userLogin', currentLogin);
@@ -43,9 +50,7 @@ function saveUserData(){
 }
 
 function ProfilCheckFromOtherHTML(){
-    const currentAvatarUrl = localStorage.getItem('userAvatarUrl');
     if (localStorage.getItem('userLogin')) {
-      /*document.getElementById('item1').src = currentAvatarUrl || '';*/
       window.location.href = '../urprofile.html';
       console.log('da');
     } else {
@@ -53,6 +58,13 @@ function ProfilCheckFromOtherHTML(){
       console.log('net');
   }
 }
+
+function ProfilePicture(){
+    if (localStorage.getItem('userAvatarUrl')) {
+        profpic.src = localStorage.getItem('userAvatarUrl');
+    }
+}
+ProfilePicture();
 /*function sendForm(){
     let error = {};
     let errors = 0;

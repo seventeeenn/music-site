@@ -1,0 +1,52 @@
+#acceptChangesButton{
+    font-weight: 600;
+    color: white;
+    padding: 15px 10px;
+    background: rgb(14, 96, 14);
+    border-radius: 10px;
+    width: 170px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+#acceptChangesButton:hover{
+    transform: scale(1.1);
+}
+#deleteInfoButton{
+    margin-left: 15px;
+    font-weight: 600;
+    color: white;
+    padding: 15px 10px;
+    background: rgb(173, 45, 45);
+    border-radius: 10px;
+    width: 130px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+#deleteInfoButton:hover{
+    transform: scale(1.1);
+}
+
+#mail{
+    margin-left: 5px;
+    font-weight: 600;
+    height: 40px;
+    margin-bottom: -15px;
+    color: white;
+    background-image:url(../images/mail.png);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+#mail:hover{
+    transform: scale(1.1);
+}
+
+.boom .menu li:nth-child(2){
+    background-color: #1d1c21;
+}
+.boom .menu li:nth-child(3){
+    background-color: rgb(18, 17, 17);
+}

@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles/mainstyles.css">
     <link rel="stylesheet" href="registration/styles/styles.css">
+    <link rel="stylesheet" href="settings/settings.css">
     <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="/styles/faq.css">
     <title>Document</title>
 </head>
 <body>
@@ -28,38 +30,23 @@
         </div>
     </header>
     <main>
-        <div class="reg-form">
-            <form action="" method="post">
-                <h2 class="main-reg-font">Регистрация</h2>
-                <div class="form-group">
-                    <input class="form-control login" type="text" required>
-                    <label>Логин</label>
-                </div>
-                <div class="form-group">
-                    <input class="form-control same1" type="password" required>
-                    <label>Пароль</label>
-                </div>
-                <div class="form-group">
-                    <input class="form-control same2" type="password" required>
-                    <label>Подтвердите пароль</label>
-                </div>
-                <div class="form-group">
-                    <input class="form-control" id="email" type="text" required>
-                    <label>Электронная почта</label>
-                </div>
-                <div class="form-group">
-                    <input class="form-control same2" type="text" id="avatar" required>
-                    <label>Ссылка на аватар</label>
-                </div>
-                <input id="sendbut" value="Регистрация" type="button" onclick="saveUserData()">
-                <div id="checkpass"></div>
-                <div id="checklog"></div>
-                <div id="checkall"></div>
-            </form>
+        <div class="righthead">
+            <a onclick="ProfilCheckFromOtherHTML()" href="#">
+              <img class="profpic" src="images/profpic.png" alt="">
+            </a>
+           </div>
+        <div class="prof-form">
+            <h2 class="main-reg-font">О сайте</h2>
+            © 2024 создано создателем. Все права защищены.<br><br>
+            Администрация Сайта не несет ответственности за содержание Материалов и за соответствие их требованиям законодательства, за нарушение авторских прав и т. д.<br>
+            <br>Связь со мной:
+            <a href="https://mail.yandex.ru"><img id="mail" src="../images/mail.png" alt=""></a>
         </div>
     </main>
+    <script src="settings/settings.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/mainscript.js"></script>
     <script src="registration/scripts/scripts.js"></script>
+    <script src="scripts/LS.js"></script>
 </body>
 </html>

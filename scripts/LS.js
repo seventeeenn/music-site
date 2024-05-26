@@ -9,6 +9,6 @@ function getDataFromLocalStorage() {
     const avatarImage = document.createElement('img');
     avatarImage.src = currentAvatarUrl || '';
     avatarImage.alt = 'User Avatar';
-    document.getElementById('avatar').appendChild(avatarImage).classList.add('profpic');
+    document.getElementById('avatar').appendChild(avatarImage).classList.add('profpicforpage');
 }
 getDataFromLocalStorage();

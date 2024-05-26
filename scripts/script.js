@@ -127,3 +127,6 @@ progressArea.addEventListener("click", (e)=>{
     playMusic();
 });
 
+function ChangeMusicBlock(){
+    
+}

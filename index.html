@@ -8,34 +8,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/mainstyles.css">
     <link rel="stylesheet" href="styles/media.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="head">
-          <a href="../index.html"><img class="logo" src="images/pre-logo.png" alt=""></a>
-        </div>
-        <div class="menu">
-          <ul>
+  <header>
+    <div class="head">
+      <a onclick="showMenu()" href="#"><img class="logo" src="images/pre-logo.png" alt=""></a>
+    </div>
+    <div class="menu">
+        <ul>
             <li><a href="../index.html" id="item1"><span class="items">Главная</span></a></li>
-            <li><a onclick="ProfilCheckFromOtherHTML()" href="../regform.html"><span class="items">Регистрация</span></a></li>
-            <li><a href="Настройки"></a></li>
-            <li><a href="О сайте"></a></li>
-          </ul>
-        </div>
-    </header>
+            <li><a onclick="ProfilCheckFromOtherHTML()" href="#"><span class="items">Регистрация/Профиль</span></a></li>
+            <li><a href="../settings.html"><span class="items">Настройки</span></a></li>
+            <li><a href="../faq.html"><span class="items">FAQ</span></a></li>
+        </ul>
+    </div>
+  </header>
     <main>
       <div class="righthead">
-        <a href="../regform.html">
-            <img class="profpic" src="images/profpic.png" alt="">
+        <a onclick="ProfilCheckFromOtherHTML()" href="#">
+          <img class="profpic" src="images/profpic.png" alt="">
         </a>
        </div>
       <div class="wrapper-for-blocks">
         <div class="block-period-music left a">
-          <p class="top-music">Лучший трек за месяц:</p>
+          <p class="top-music">Лучший трек недели:</p>
           <img class="gram-plast" src="images/gram-plast.png" alt="">
           <div class="lower-block">
               <div class="song-details">
@@ -74,12 +77,12 @@
                   </div>
               </button>
               <div class="block-period-music mid b">
-                  <p class="top-music">Лучший трек за месяц:</p>
+                  <p class="top-music">Лучший трек месяца:</p>
                   <img class="gram-plast" src="images/gram-plast.png" alt="">
                   <div class="lower-block">
                       <div class="song-details">
-                          <p class="track-name">Name of the track</p>
-                          <p class="track-artist">Author</p>
+                          <p class="track-name">My Own Summer</p>
+                          <p class="track-artist">Deftones</p>
                       </div>
                       <div class="controls">
                           <i class="material-icons">play_arrow</i>
@@ -113,7 +116,7 @@
                   </div>
               </button>
           <div class="block-period-music right c">
-            <p class="top-music">Лучший трек за месяц:</p>
+            <p class="top-music">Лучший трек дня:</p>
             <img class="gram-plast" src="images/gram-plast.png" alt="">
             <div class="lower-block">
                 <div class="song-details">
@@ -143,15 +146,30 @@
     </div>
     <div class="cards">
       <div class="card-block">
-        <img src="images/metal.jpg" alt="">
+        <img src="images/metal.jpg" class="brightness" alt="">
         <p class="genre">Metal</p>
       </div>
       <div class="card-block">
-        
+        <img class="brightness" src="images/rock.jpg" alt="">
+        <p class="genre">Rock</p>
+      </div>
+      <div class="card-block">
+        <img class="brightness" src="images/rock.jpg" alt="">
+        <p class="genre">Rock</p>
+      </div><div class="card-block">
+        <img class="brightness" src="images/rock.jpg" alt="">
+        <p class="genre">Rock</p>
+      </div><div class="card-block">
+        <img class="brightness" src="images/rock.jpg" alt="">
+        <p class="genre">Rock</p>
+      </div><div class="card-block">
+        <img class="brightness" src="images/rock.jpg" alt="">
+        <p class="genre">Rock</p>
       </div>
     </div>
     </main>
-    
+    <script src="scripts/menu.js"></script>
     <script src="scripts/script.js"></script>
-</body>
+    <script src="registration/scripts/scripts.js"></script>
+  </body>
 </html>

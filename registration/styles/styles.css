@@ -2,7 +2,6 @@ main{
     justify-content: center;
     align-items: flex-start;
 }
-
 .main-reg-font{
     color: white;
     margin: 0;
@@ -26,6 +25,7 @@ main{
     box-shadow: #1d1c21;
     border-radius: 10px;
     background: #1d1c21;
+    animation: cloudreverse 10s ease-in-out infinite;
 }
 .form-group{
     position: relative;
@@ -83,4 +83,8 @@ main{
     font-size: 13px;
     color: rgb(236, 102, 102);
     margin-left: 5px;
+}
+
+.boom .menu li:nth-child(2){
+    background-color: rgb(18, 17, 17);
 }

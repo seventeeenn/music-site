@@ -10,28 +10,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles/mainstyles.css">
     <link rel="stylesheet" href="registration/styles/styles.css">
+    <link rel="stylesheet" href="styles/media.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="head">
-            <a href="../index.html"><img class="logo" src="images/pre-logo.png" alt=""></a>
+          <a onclick="showMenu()" href="#"><img class="logo" src="images/pre-logo.png" alt=""></a>
         </div>
         <div class="menu">
             <ul>
                 <li><a href="../index.html" id="item1"><span class="items">Главная</span></a></li>
-                <li><a onclick="ProfilCheckFromOtherHTML()" href="../regform.html"><span class="items">Регистрация</span></a></li>
-                <li><a href="Настройки"></a></li>
-                <li><a href="О сайте"></a></li>
-              </ul>
+                <li><a onclick="ProfilCheckFromOtherHTML()" href="#"><span class="items">Регистрация/Профиль</span></a></li>
+                <li><a href="../settings.html"><span class="items">Настройки</span></a></li>
+                <li><a href="../faq.html"><span class="items">FAQ</span></a></li>
+            </ul>
         </div>
     </header>
     <main>
-        <div class="righthead">
-            <a href="../regform.html">
-                <img class="profpic" src="images/profpic.png" alt="">
-            </a>
-        </div>
         <div class="prof-form">
             <h2 class="main-reg-font">Профиль</h2>
             <p class="reg-font">
@@ -40,6 +36,7 @@
             </p>
         </div>
     </main>
+    <script src="scripts/menu.js"></script>
     <script src="scripts/mainscript.js"></script>
     <script src="registration/scripts/scripts.js"></script>
     <script src="scripts/LS.js"></script>
